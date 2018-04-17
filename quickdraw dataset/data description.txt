@@ -1,0 +1,2 @@
+Data in *.npy format
+Read by calling np.load("filname.npy") => nx(28*28) np array. n = number of images, 28*28 = number of pixels 
