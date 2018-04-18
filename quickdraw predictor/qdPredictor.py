@@ -13,7 +13,11 @@ b = tf.Variable(tf.zeros([3]));
 
 y = tf.nn.softmax(tf.matmul(x,W) + b);
 
-y_
+y_ = tf.placeholder(tf.float32, [None,3])
+
+cross_entropy = tf.reduce_mean(-tf.reduce_sum(y*tf.log(y),reduction_indices=[1]));
+
+
 
 
 # ds = tf.data.Dataset.from_tensor_slices(testImages);
